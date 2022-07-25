@@ -19,5 +19,5 @@ const products = ingredients.map(el => {
 
 const ul = document.querySelector('ul')
 ul.append(...products)
-console.log(ul)
+
 

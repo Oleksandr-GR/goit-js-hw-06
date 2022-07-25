@@ -9,7 +9,7 @@ const figureBlock = document.querySelector('#boxes');
 figureBlock.style.display = "flex";
 figureBlock.style.listStyle = "none"; console.log(figureBlock)
 
-let amount = 0;
+let size = 20;
 
 createClickHandling.addEventListener('click', createBoxes);
 destroyClickHandling.addEventListener('click', destroyBoxes);
@@ -17,7 +17,6 @@ destroyClickHandling.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
 
   amount = Number(inputField.value);
-  let size = 20;
 
   for (let i = 1; i <= amount; i += 1){
       

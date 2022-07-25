@@ -2,7 +2,7 @@ const incrBtn = document.querySelector('button[data-action="increment"]');
 const decrBtn = document.querySelector('button[data-action="decrement"]');
 const finalValue = document.querySelector('span');
 
-const counterValue = {
+const counter = {
     value: 0,
 
     increment() {
@@ -15,11 +15,11 @@ const counterValue = {
 };
 
 incrBtn.addEventListener('click', () => {
-    counterValue.increment();
-    finalValue.textContent = counterValue.value;
+    counter.increment();
+    finalValue.textContent = counter.value;
 });
 
 decrBtn.addEventListener('click', () => {
-    counterValue.decrement();
-    finalValue.textContent = counterValue.value;
+    counter.decrement();
+    finalValue.textContent = counter.value;
 });
