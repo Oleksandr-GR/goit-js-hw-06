@@ -27,7 +27,7 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-
+  size = 20;
   figureBlock.innerHTML = '';
   inputField.value = '';
 
